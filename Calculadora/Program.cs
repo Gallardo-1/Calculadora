@@ -10,14 +10,18 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
+             
 
             Console.ForegroundColor = ConsoleColor.Black;
             Console.BackgroundColor = ConsoleColor.Magenta;
             Console.Title = "Calculadora ";
+            // usamos un selector con condicion para garantizar un uso adecuado para el usuario
+            
             string op;
 
             do
             {
+                //agregamos comentarios para guiar al usuario
                 Console.Clear();
                 Console.WriteLine("------------------------------");
                 Console.WriteLine("Calculadora ");
@@ -54,16 +58,18 @@ namespace Calculadora
                         break;
 
                     default:
+                       
                         Console.WriteLine("Opcion no valida intente de nuevo...");
                         break;
                 }
                 Console.ReadKey();
 
             }
+            // Le damos la opcion de salir al usuario cerrando el ciclo do-while
             while (op != "5");
 
         }
-
+        // Agregamos los metodos 
         static void Sumar()
         {
 
