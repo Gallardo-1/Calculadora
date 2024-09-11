@@ -11,7 +11,8 @@ namespace Calculadora
         static void Main(string[] args)
         {
 
-            
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.Magenta;
             Console.Title = "Calculadora ";
             string op;
 
