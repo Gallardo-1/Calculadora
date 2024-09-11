@@ -41,11 +41,11 @@ namespace Calculadora
                         break;
 
                     case "3":
-                        
+                        Multiplicar();
                         break;
-
-                    case "4":
                         
+                    case "4":
+                        Dividir();
                         break;
 
                     case "5":
@@ -102,5 +102,47 @@ namespace Calculadora
 
 
         }
+
+        static void Multiplicar()
+        {
+
+            decimal num1, num2, resultado;
+
+            Console.WriteLine("Ingresa el primero numero");
+            num1 = Convert.ToDecimal(Console.ReadLine());
+
+
+            Console.WriteLine("Ingresa el segundo numero");
+            num2 = Convert.ToDecimal(Console.ReadLine());
+
+
+            resultado = num1 * num2;
+
+            Console.WriteLine("{0} * {1} = {2}", num1, num2, resultado);
+
+
+        }
+
+        static void Dividir()
+        {
+
+            decimal num1, num2, resultado;
+
+            Console.WriteLine("Ingresa el primero numero");
+            num1 = Convert.ToDecimal(Console.ReadLine());
+
+
+            Console.WriteLine("Ingresa el segundo numero");
+            num2 = Convert.ToDecimal(Console.ReadLine());
+
+
+            resultado = num1 / num2;
+
+            Console.WriteLine("{0} / {1} = {2}", num1, num2, resultado);
+
+
+        }
+
+
     }
 }
