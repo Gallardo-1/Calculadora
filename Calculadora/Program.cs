@@ -33,11 +33,11 @@ namespace Calculadora
                 switch (op)
                 {
                     case "1":
-                        
+                        Sumar();
                         break;
 
                     case "2":
-                        
+                        Restar();
                         break;
 
                     case "3":
@@ -49,7 +49,7 @@ namespace Calculadora
                         break;
 
                     case "5":
-                        Console.WriteLine("Buen viaje!- GT17016-HENRY GALLARDO");
+                        Console.WriteLine("Buen viaje!");
                         break;
 
                     default:
@@ -60,6 +60,46 @@ namespace Calculadora
 
             }
             while (op != "5");
+
+        }
+
+        static void Sumar()
+        {
+
+            decimal num1, num2, resultado;
+
+            Console.WriteLine("Ingresa el primero numero");
+            num1 = Convert.ToDecimal(Console.ReadLine());
+
+
+            Console.WriteLine("Ingresa el segundo numero");
+            num2 = Convert.ToDecimal(Console.ReadLine());
+
+
+            resultado = num1 + num2;
+
+            Console.WriteLine("{0} + {1} = {2}", num1, num2, resultado);
+
+
+        }
+
+        static void Restar()
+        {
+
+            decimal num1, num2, resultado;
+
+            Console.WriteLine("Ingresa el primero numero");
+            num1 = Convert.ToDecimal(Console.ReadLine());
+
+
+            Console.WriteLine("Ingresa el segundo numero");
+            num2 = Convert.ToDecimal(Console.ReadLine());
+
+
+            resultado = num1 - num2;
+
+            Console.WriteLine("{0} - {1} = {2}", num1, num2, resultado);
+
 
         }
     }
